@@ -1,0 +1,307 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .main {
+        flex-direction: column;
+        background-color: white;
+ 
+    }
+    .sidebar {
+        width: 160px;
+        height:200px;
+        float: left;
+    }
+        .sidebar a {
+            text-decoration: none;
+            color:#333;
+            display:flex;
+            border-bottom:1px solid;
+            padding:6px 10px;
+        }
+    .content {
+        margin-left: 160px;
+        min-height: 1000px;
+        background-color: #FFFFFF;
+        border-left: 1px solid black;
+        position:relative;
+    }
+    .footer {
+        background-color: #999999;
+        text-align: center;
+        padding: 5px 0px;
+        border-top: 1px solid black;
+    }
+    .navigator {
+        background-color: white;
+        padding: 5px 0px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+        .navigator a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #333;
+        }
+        .slider{
+            display:flex;
+            flex-direction:row;
+            position:relative;
+            width:100%;
+        }
+        .slide img{
+            width:100%;
+            position:relative;
+        }
+       .product{
+           background-color:aliceblue;
+           margin-top:10px;
+           height:100%
+       }
+        .danhmuc{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            position:relative;
+            font-size:8px;
+            margin: 10px;
+        }
+        .product-item img{
+            width:30%;
+            position:relative;
+            border-radius:50%;
+        }
+    .sidebar-product {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position:relative;
+        background-color:aliceblue;
+        text-align:center;
+
+    }
+    .product-iPhone img {
+        width: 90%;
+        margin:5px;
+    }
+    .option {
+        display: flex;
+        position: relative;
+        width: 100%;
+        background-color: aliceblue;
+        font-size:8px;
+        
+    }
+    .button {
+        display: flex;
+        position: relative;
+        padding: 5px 10px;
+        height:50px;
+        font-size:8px;
+        margin-top:5px;
+    }
+    .button-opt button{
+        border-radius:10px;
+        font-size:12px;
+        margin-right: 2px;
+        border:1px solid rgb(221,221,227);
+        background-color:white;
+
+    }
+    .button-opt{
+        margin-right:10px;
+    }
+    .main-product {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        background-color: aliceblue;
+        text-align:center;
+        font-size:10px;
+    }
+    .product-opt img {
+        width: 98%;
+        margin:5px;
+    }
+    .product-opt h2{
+        color:red;
+        
+        
+    }
+
+</style>
+<section class="main">
+
+    <nav class="navigator">
+        <a href="#">Cam kết</a>
+        <a href="#">100$ Hàng Thật</a>
+        <a href="#">Hoàn 200% nếu hàng giả</a>
+        <a href="#">30 ngày đổi trả</a>
+        <a href="#">Giao nhannh 2 giờ</a>
+        <a href="#">Giá siêu rẻ</a>
+        <a href="#">Freeship mọi đơn</a>
+    </nav>
+    <aside class="sidebar">
+
+
+        <div>
+            <a href="#" style="font-size:12px;">Khám phá danh mục</a>
+        </div>
+        <div>
+            <a href="#">Điện thoại smartphone</a>
+        </div>
+        <div>
+            <a href="#">Máy tính bảng</a>
+        </div>
+        <div>
+            <a href="#">Máy đọc sách</a>
+        </div>
+        <div>
+            <a href="#">Điện thoại phổ thông</a>
+        </div>
+        <div>
+            <a href="#">Điện thoại bàn</a>
+        </div>
+
+        <div class="sidebar-product">
+            <div class="product-iPhone">
+                <img src="~/Content/img/ip16prm.jpg" alt="iPhone 16 pro max" />
+                <h3>Apple iPhone 16 Pro Max- Xanh Lưu Ly - 512GB</h3>
+                <p>40.990.000đ</p>
+                <button style="background-color:deepskyblue;color:white;">Xem Thêm</button>
+            </div>
+        </div>
+        <div class="sidebar-product">
+            <div class="product-iPhone">
+                <img src="~/Content/img/ip16prm.jpg" alt="iPhone 16" />
+                <h3>Apple iPhone 16 Pro - Xanh Lưu Ly - 512GB</h3>
+                <p>31.990.000đ</p>
+                <button style="background-color:deepskyblue;color:white;">Xem Thêm</button>
+            </div>
+        </div>
+        <div class="sidebar-product">
+            <div class="product-iPhone">
+                <img src="~/Content/img/ip16prm.jpg" alt="iPhone 16" />
+                <h3>Apple iPhone 16 Pro - Xanh Lưu Ly - 512GB</h3>
+                <p>31.990.000đ</p>
+                <button style="background-color:deepskyblue;color:white;">Xem Thêm</button>
+            </div>
+        </div>
+
+
+    </aside>
+    <main class="content">
+        <h2 style="padding:16px; background-color:aliceblue; border-radius:8px;">Điện Thoại-Máy Tính Bảng</h2>
+        <div class="slider">
+            <div class="slide">
+                <img class="active" src="~/Content/img/Tivi.png" />
+            </div>
+            <div class="slide">
+                <img src="~/Content/img/slidedt.png" />
+            </div>
+        </div>
+        <div class="product" margin-top:10px;">
+            <div><h1>Khám Phá Danh Mục</h1></div>
+            <div class="danhmuc">
+                <div class="product-item">
+                    <img src="~/Content/img/maytinhbang.png" alt="Máy Tính Bảng" />
+                    <h3>Máy Tính Bảng</h3>
+                </div>
+                <div class="product-item">
+                    <img src="~/Content/img/maydocsach.png" alt="Máy Đọc Sách" />
+                    <h3>Máy Đọc Sách</h3>
+                </div>
+                <div class="product-item">
+                    <img src="~/Content/img/dtphothong.png" alt="Điện Thoại Phổ Thông " />
+                    <h3>Điện Thoại Phổ Thông</h3>
+                </div>
+                <div class="product-item">
+                    <img src="~/Content/img/dienthoaiban.png" alt="Điện thoại Bàn" />
+                    <h3>Điện thoại Bàn</h3>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <div style="font-size:14px; margin-top:5px;">
+                Tất cả sản phẩm
+                <div class="button">
+                    <div class="button-opt">
+                        <div>ROM</div>
+                        <button>128GB</button>
+                        <button>256GB</button>
+                        <button>64GB</button>
+                        <button>32GB</button>
+                    </div>
+                    <div class="button-opt">
+                        <div>Thương hiệu</div>
+                        <button>Samsung</button>
+                        <button>Xiaomi</button>
+                        <button>OPPO</button>
+                        <button>Panasonic</button>
+                    </div>
+                    <div class="button-opt">
+                        <div>Camera sau</div>
+                        <button>Trên 16MP</button>
+                        <button>Từ 11MP đến 13MP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-product">
+            <div class="product-opt">
+                <img src="~/Content/img/ip15prm.png" alt="iPhone 15 Pro Max" />
+                <h2>28.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 15 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="~/Content/img/ip14prm.png" alt="iPhone 14 Pro Max" />
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="~/Content/img/ip14prm.png" alt="iPhone 14 Pro Max" />
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="~/Content/img/ip14prm.png" alt="iPhone 14 Pro Max" />
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+        </div>
+        <div class="main-product">
+            <div class="product-opt">
+                <img src="~/Content/img/ip15prm.png" alt="iPhone 15 Pro Max" />
+                <h2>28.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 15 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="~/Content/img/ip14prm.png" alt="iPhone 14 Pro Max" />
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="~/Content/img/ip14prm.png" alt="iPhone 14 Pro Max" />
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="~/Content/img/ip14prm.png" alt="iPhone 14 Pro Max" />
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+        </div>
+
+
+    </main>
+
+</section>

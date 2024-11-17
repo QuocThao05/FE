@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<style type="text/css">
+    html {
+        font-size: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    body {
+        background-color: dimgrey;
+        margin: 0px;
+    }
+
+    #main-header {
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+    .container {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 5px;
+    }
+
+    .search-icon {
+        margin-left: 5px;
+    }
+
+    /* Nút tìm kiếm */
+    .search-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .search-button:hover {
+            background-color: #0069d9;
+        }
+
+    .logo img {
+        height: 30px;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(0, 62, 161)
+    }
+
+    .search-bar {
+        height: 20px;
+    }
+
+    .voucher {
+        color: #00AB56;
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+        .voucher img {
+            height: 10px;
+            vertical-align: middle;
+        }
+
+    .infomation {
+        background-color: white;
+        align-content: center;
+    }
+
+        .infomation li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 3px;
+        }
+
+        .infomation ul {
+            list-style-type: none;
+        }
+
+    .nav {
+        width: 400px;
+        float: left;
+        text-align: center;
+    }
+
+    .delivery ul li a {
+        width: 200px;
+        float: right;
+        text-align: right;
+        margin-top: 0;
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="conntainer">
+        <div class="voucher">Freeship đơn từ 45K, giảm nhiều hơn cùng  <img src="~/Content/img/extra.png" /></div>
+
+        <header id="main-header">
+
+            <div class="logo">
+                <img src="~/Content/img/tiki.png" />
+                <span>Tốt & Nhanh</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+                <button class="search-button">Tìm kiếm</button>
+                <i class="search-icon fas fa-search"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Trang Chủ</a> </li>
+                    <li><a href="#"> Tài Khoản</a> </li>
+                </ul>
+            </nav>
+
+
+
+        </header>
+        <div class="infomation">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#">điện gia dụng</a>
+                        <a href="">xe cộ</a>
+                        <a href="#">mẹ và bé</a>
+                        <a href="">khỏe đẹp</a>
+                        <a href="#">nhà cửa</a>
+                        <a href="">sách</a>
+                        <a href="#">thể thao</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="delivery">
+                <ul>
+                    <li>
+                        <a href="#"> Giao đến:Q. 1, P. Bến Nghé, Hồ Chí Minh</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <section class="main">
+            @RenderBody()
+
+        </section>
+
+    </div>
+</body>
+</html>

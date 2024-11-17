@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://localhost:44358/Home/Trangchu -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+    html {
+        font-size: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    body {
+        background-color: dimgrey;
+        margin: 0px;
+        
+    }
+    #main-header {
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       height:15px;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    .container {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        list-style-type: none;
+        display: flex;
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 5px;
+    }
+
+    .search-icon {
+        margin-left: 5px;
+    }
+
+    /* Nút tìm kiếm */
+    .search-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-button:hover {
+            background-color:#0069d9;
+        }
+    .logo img{
+            height:30px;
+        }
+    span {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(0, 62, 161)
+    }
+    
+    .search-bar{
+            height:20px;
+        }
+    .voucher {  
+        color: #00AB56;
+        text-align:center;
+        background-color:aquamarine;
+
+        }
+    .voucher img {
+        height: 10px;
+        vertical-align: middle;
+        }
+
+    .infomation {
+        background-color: white;
+        align-content: center;
+    }
+        .infomation li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 3px;
+        }
+        .infomation ul {
+            list-style-type: none;
+        }
+    .nav {
+        width: 400px;
+        float: left;
+        text-align: center;
+         
+    }
+
+    .delivery ul li a {
+        width: 200px;
+        float:right;
+        text-align:right;
+        margin-top:0;
+    }
+    
+    
+    
+</style>
+
+
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+</head>
+<body>
+    <div id="conntainer">
+        <div class="voucher">Freeship đơn từ 45K, giảm nhiều hơn cùng  <img src="./Trangchu_files/extra.png"></div>
+
+        <header id="main-header">
+
+            <div class="logo">
+                <img src="./Trangchu_files/tiki.png">
+                <span>Tốt &amp; Nhanh</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+                <button class="search-button">Tìm kiếm</button>
+                <i class="search-icon fas fa-search"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="https://localhost:44358/Home/Trangchu#">Trang Chủ</a> </li>
+                    <li><a href="https://localhost:44358/Home/Trangchu#"> Tài Khoản</a> </li>
+                </ul>
+            </nav>
+
+
+
+        </header>
+        <div class="infomation">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="https://localhost:44358/Home/Trangchu#">điện gia dụng</a>
+                        <a href="https://localhost:44358/Home/Trangchu">xe cộ</a>
+                        <a href="https://localhost:44358/Home/Trangchu#">mẹ và bé</a>
+                        <a href="https://localhost:44358/Home/Trangchu">khỏe đẹp</a>
+                        <a href="https://localhost:44358/Home/Trangchu#">nhà cửa</a>
+                        <a href="https://localhost:44358/Home/Trangchu">sách</a>
+                        <a href="https://localhost:44358/Home/Trangchu#">thể thao</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="delivery">
+                <ul>
+                    <li>
+                        <a href="https://localhost:44358/Home/Trangchu#"> Giao đến:Q. 1, P. Bến Nghé, Hồ Chí Minh</a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+
+        <section class="main">
+            
+
+<style>
+    .main {
+        flex-direction: column;
+        background-color: white;
+ 
+    }
+    .sidebar {
+        width: 160px;
+        height:200px;
+        float: left;
+    }
+        .sidebar a {
+            text-decoration: none;
+            color:#333;
+            display:flex;
+            border-bottom:1px solid;
+            padding:6px 10px;
+        }
+    .content {
+        margin-left: 160px;
+        min-height: 1000px;
+        background-color: #FFFFFF;
+        border-left: 1px solid black;
+        position:relative;
+    }
+    .footer {
+        background-color: #999999;
+        text-align: center;
+        padding: 5px 0px;
+        border-top: 1px solid black;
+    }
+    .navigator {
+        background-color: white;
+        padding: 5px 0px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+        .navigator a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #333;
+        }
+        .slider{
+            display:flex;
+            flex-direction:row;
+            position:relative;
+            width:100%;
+        }
+        .slide img{
+            width:100%;
+            position:relative;
+        }
+       .product{
+           background-color:aliceblue;
+           margin-top:10px;
+           height:100%
+       }
+        .danhmuc{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            position:relative;
+            font-size:8px;
+            margin: 10px;
+        }
+        .product-item img{
+            width:30%;
+            position:relative;
+            border-radius:50%;
+        }
+    .sidebar-product {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position:relative;
+        background-color:aliceblue;
+        text-align:center;
+
+    }
+    .product-iPhone img {
+        width: 90%;
+        margin:5px;
+    }
+    .option {
+        display: flex;
+        position: relative;
+        width: 100%;
+        background-color: aliceblue;
+        font-size:8px;
+        
+    }
+    .button {
+        display: flex;
+        position: relative;
+        padding: 5px 10px;
+        height:50px;
+        font-size:8px;
+        margin-top:5px;
+    }
+    .button-opt button{
+        border-radius:10px;
+        font-size:12px;
+        margin-right: 2px;
+        border:1px solid rgb(221,221,227);
+        background-color:white;
+
+    }
+    .button-opt{
+        margin-right:10px;
+    }
+    .main-product {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        background-color: aliceblue;
+        text-align:center;
+        font-size:10px;
+    }
+    .product-opt img {
+        width: 98%;
+        margin:5px;
+    }
+    .product-opt h2{
+        color:red;
+        
+        
+    }
+
+</style>
+<section class="main">
+
+    <nav class="navigator">
+        <a href="https://localhost:44358/Home/Trangchu#">Cam kết</a>
+        <a href="https://localhost:44358/Home/Trangchu#">100$ Hàng Thật</a>
+        <a href="https://localhost:44358/Home/Trangchu#">Hoàn 200% nếu hàng giả</a>
+        <a href="https://localhost:44358/Home/Trangchu#">30 ngày đổi trả</a>
+        <a href="https://localhost:44358/Home/Trangchu#">Giao nhannh 2 giờ</a>
+        <a href="https://localhost:44358/Home/Trangchu#">Giá siêu rẻ</a>
+        <a href="https://localhost:44358/Home/Trangchu#">Freeship mọi đơn</a>
+    </nav>
+    <aside class="sidebar">
+
+
+        <div>
+            <a href="https://localhost:44358/Home/Trangchu#" style="font-size:12px;">Khám phá danh mục</a>
+        </div>
+        <div>
+            <a href="https://localhost:44358/Home/Trangchu#">Điện thoại smartphone</a>
+        </div>
+        <div>
+            <a href="https://localhost:44358/Home/Trangchu#">Máy tính bảng</a>
+        </div>
+        <div>
+            <a href="https://localhost:44358/Home/Trangchu#">Máy đọc sách</a>
+        </div>
+        <div>
+            <a href="https://localhost:44358/Home/Trangchu#">Điện thoại phổ thông</a>
+        </div>
+        <div>
+            <a href="https://localhost:44358/Home/Trangchu#">Điện thoại bàn</a>
+        </div>
+
+        <div class="sidebar-product">
+            <div class="product-iPhone">
+                <img src="./Trangchu_files/ip16prm.jpg" alt="iPhone 16 pro max">
+                <h3>Apple iPhone 16 Pro Max- Xanh Lưu Ly - 512GB</h3>
+                <p>40.990.000đ</p>
+                <button style="background-color:deepskyblue;color:white;">Xem Thêm</button>
+            </div>
+        </div>
+        <div class="sidebar-product">
+            <div class="product-iPhone">
+                <img src="./Trangchu_files/ip16prm.jpg" alt="iPhone 16">
+                <h3>Apple iPhone 16 Pro - Xanh Lưu Ly - 512GB</h3>
+                <p>31.990.000đ</p>
+                <button style="background-color:deepskyblue;color:white;">Xem Thêm</button>
+            </div>
+        </div>
+        <div class="sidebar-product">
+            <div class="product-iPhone">
+                <img src="./Trangchu_files/ip16prm.jpg" alt="iPhone 16">
+                <h3>Apple iPhone 16 Pro - Xanh Lưu Ly - 512GB</h3>
+                <p>31.990.000đ</p>
+                <button style="background-color:deepskyblue;color:white;">Xem Thêm</button>
+            </div>
+        </div>
+
+
+    </aside>
+    <main class="content">
+        <h2 style="padding:16px; background-color:aliceblue; border-radius:8px;">Điện Thoại-Máy Tính Bảng</h2>
+        <div class="slider">
+            <div class="slide">
+                <img class="active" src="./Trangchu_files/Tivi.png">
+            </div>
+            <div class="slide">
+                <img src="./Trangchu_files/slidedt.png">
+            </div>
+        </div>
+        <div class="product" margin-top:10px;"="">
+            <div><h1>Khám Phá Danh Mục</h1></div>
+            <div class="danhmuc">
+                <div class="product-item">
+                    <img src="./Trangchu_files/maytinhbang.png" alt="Máy Tính Bảng">
+                    <h3>Máy Tính Bảng</h3>
+                </div>
+                <div class="product-item">
+                    <img src="./Trangchu_files/maydocsach.png" alt="Máy Đọc Sách">
+                    <h3>Máy Đọc Sách</h3>
+                </div>
+                <div class="product-item">
+                    <img src="./Trangchu_files/dtphothong.png" alt="Điện Thoại Phổ Thông ">
+                    <h3>Điện Thoại Phổ Thông</h3>
+                </div>
+                <div class="product-item">
+                    <img src="./Trangchu_files/dienthoaiban.png" alt="Điện thoại Bàn">
+                    <h3>Điện thoại Bàn</h3>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <div style="font-size:14px; margin-top:5px;">
+                Tất cả sản phẩm
+                <div class="button">
+                    <div class="button-opt">
+                        <div>ROM</div>
+                        <button>128GB</button>
+                        <button>256GB</button>
+                        <button>64GB</button>
+                        <button>32GB</button>
+                    </div>
+                    <div class="button-opt">
+                        <div>Thương hiệu</div>
+                        <button>Samsung</button>
+                        <button>Xiaomi</button>
+                        <button>OPPO</button>
+                        <button>Panasonic</button>
+                    </div>
+                    <div class="button-opt">
+                        <div>Camera sau</div>
+                        <button>Trên 16MP</button>
+                        <button>Từ 11MP đến 13MP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-product">
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip15prm.png" alt="iPhone 15 Pro Max">
+                <h2>28.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 15 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip14prm.png" alt="iPhone 14 Pro Max">
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip14prm.png" alt="iPhone 14 Pro Max">
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip14prm.png" alt="iPhone 14 Pro Max">
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+        </div>
+        <div class="main-product">
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip15prm.png" alt="iPhone 15 Pro Max">
+                <h2>28.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 15 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip14prm.png" alt="iPhone 14 Pro Max">
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip14prm.png" alt="iPhone 14 Pro Max">
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+            <div class="product-opt">
+                <img src="./Trangchu_files/ip14prm.png" alt="iPhone 14 Pro Max">
+                <h2>21.990.000<sup>₫</sup></h2>
+                <p>APPLE</p>
+                <h3>iPhone 14 Pro Max</h3>
+            </div>
+        </div>
+
+
+    </main>
+
+</section>
+            
+        </section>
+
+    </div>
+
+
+</body></html>
